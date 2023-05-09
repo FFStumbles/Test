@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<form action="thanks.php" method="post">
+		<fieldset>
+			<legend><h2>Here's a Form:</h2></legend>
+			
+			<label for="first_name">First Name:</label>
+			<input type="text" name="first_name" id="first_name" />
+			
+			<label for="email">Type your email here:</label>
+			<input type="email" name="email" id="email" />
+			
+			<label for="password">Type your password here:</label>
+			<input type="password" name="password" id="password" />
+			
+			<label for="yes_no">Choose One</label>
+			<div class="container">
+			<input type="radio" name="yes_no" id="yes_no" value="yes" checked>Yes
+			<input type="radio" name="yes_no" id="yes_no" value="no" checked>No
+			</div>
+			
+			<label for="checks">Choose multiple</label>
+			<div class="container">
+			<input type="checkbox" name="Choice_1" id="checks" value="choice_1">Choice 1
+			<input type="checkbox" name="Choice_2" value="choice_2">Choice 2
+			<input type="checkbox" name="Choice_3" value="choice_3">Choice 3
+			<input type="checkbox" name="Choice_4" value="choice_4">Choice 4
+			</div>
+			
+			<label for="drop-down">Choose from the list</label>
+			<div class="container">
+			<select name="drop-down" id="drop-down">
+				<option value="choice_5">Choice 5</option>
+				<option value="choice_6">Choice 6</option>
+				<option value="choice_7" selected>Choice 7</option>
+				<option value="choice_8">Choice 8</option>
+				<option value="choice_9">Choice 9</option>
+			</select>
+			</div>
+			
+			<label for="para">Type a paragraph:</label>
+			<textarea name="para" id="para" rows="5" cols="45">Default text
+			</textarea>
+			<br />
+			<button type="button" name="click" id="click"
+			onclick="alert('You pushed the Button!')">Click Here!</button>
+			<br />
+			
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</fieldset>
+		</form>
+		
+	</body>
+</html>
